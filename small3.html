@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> متوسط</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="small3.css">
+  <link rel="stylesheet" href="header.css">
+</head>
+
+<body>
+
+
+
+
+
+  <div class="menu-container">
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href=" index.html">الرئيسية</a></li>
+      <li><a href="courses.html">الكورسات </a></li>
+      <li><a href="services.html">خدماتنا</a></li>
+      <li><a href="contact.html">اتصل بنا</a></li>
+    </ul>
+
+    
+    <a href="index.html">
+      <h1 class="logo">
+        قعدة علم
+      </h1>
+    </a>
+  </div>
+
+
+
+
+
+
+  <!--paragraph of the top with it is img-->
+
+  <div class="divWelcome">
+
+      <img src=" small3.png" alt="" class="imgWelcome"></img>
+ 
+    <p class="pWelcome">
+      حباب أبطال الصف الثالث متوسط !<br> نحن سعيدين جدا باختياركم لينا في رحلتكم الدراسية ، إن شاء الله تستفيدوا من محتوى موقعنا ونكون سبب في نجاحكم وتحقيق أهدافكم ، 
+      و ان شاء الله درجات حلوة زيكم كدا . 
+      <br>
+      خلينا ليكم شوية نصايح متنوعة تساعدكم فالقراية حتلقوها تحت .
+    </p> 
+  </div>
+  <a href="advices.html" style="display: flex; justify-content: center; text-decoration: none;">
+    <button>قراءة النصايح</button>
+  </a>
+
+
+
+
+<!-- courses under here nigga-->
+
+<div class="container">
+  <header>
+      <h1>نظام كورسات الصف الثالث متوسط</h1>
+      <p style="color: white;">
+            
+      </p>
+  </header>
+
+  <div class="search-container">
+      <input type="text" id="search-input" placeholder="ابحث عن ، درس ، مادة...">
+      <i class="fas fa-search search-icon"></i>
+      <button class="advanced-search-btn" id="advanced-search-btn">
+          <i class="fas fa-filter"></i>
+          بحث متقدم
+      </button>
+  </div>
+
+  <div class="filters-container" id="filters-container">
+      <div class="filter-group">
+          <h3>نطاق السعر</h3>
+          <div class="price-range">
+              <input type="number" id="min-price" placeholder="الحد الأدنى" min="0">
+              <span>إلى</span>
+              <input type="number" id="max-price" placeholder="الحد الأقصى" min="0">
+          </div>
+      </div>
+      
+      <div class="filter-group">
+          <h3>نوع الكورس</h3>
+          <div class="mode-filter">
+              <label class="mode-option">
+                  <input type="checkbox" id="online-filter" checked>
+                  <span>أونلاين</span>
+              </label>
+              <label class="mode-option">
+                  <input type="checkbox" id="offline-filter" checked>
+                  <span>أوفلاين</span>
+              </label>
+              <label class="mode-option">
+                  <input type="checkbox" id="mixed-filter" checked>
+                  <span>مزدوج</span>
+              </label>
+          </div>
+      </div>
+      
+      <div class="filter-group state-filter">
+          <h3>الولاية (للأوفلاين فقط)</h3>
+          <select id="state-select">
+              <option value="">كل الأماكن</option>
+              <option value="السعودية">السعودية</option>
+              <option value="مصر">مصر</option>
+              <option value="الخرطوم">الخرطوم</option>
+              <option value="الشمالية">الشمالية</option>
+              <option value="نهر النيل">نهر النيل</option>
+              <option value="كسلا">كسلا</option>
+              <option value="البحر الأحمر">البحر الأحمر</option>
+              <option value="القضارف">القضارف</option>
+              <option value="الجزيرة">الجزيرة</option>
+              <option value="سنار">سنار</option>
+              <option value="النيل الأبيض">النيل الأبيض</option>
+              <option value="النيل الأزرق">النيل الأزرق</option>
+              <option value="جنوب كردفان">جنوب كردفان</option>
+              <option value="غرب كردفان">غرب كردفان</option>
+              <option value="شمال كردفان">شمال كردفان</option>
+              <option value="شمال دارفور">شمال دارفور</option>
+              <option value="غرب دارفور">غرب دارفور</option>
+              <option value="جنوب دارفور">جنوب دارفور</option>
+              <option value="شرق دارفور">شرق دارفور</option>
+              <option value="وسط دارفور">وسط دارفور</option>
+          </select>
+      </div>
+      
+      <div class="filter-group subject-filter">
+          <h3>المادة الدراسية</h3>
+          <select id="subject-select">
+              <option value="">كل المواد</option>
+              <option value="قرآن كريم">قرآن كريم</option>
+              <option value="لغة عربية">لغة عربية</option>
+              <option value="لغة إنجليزية">لغة إنجليزية</option>
+              <option value="علوم">علوم</option>
+              <option value="جغرافيا">جغرافيا</option>
+              <option value="تاريخ">تاريخ</option>
+              <option value="رياضيات">رياضيات</option>
+              <option value="تربية تقنية">تربية تقنية</option>
+              <option value="تكنولوجيا المعلومات">تكنولوجيا المعلومات</option>
+          </select>
+      </div>
+      
+      <div class="filter-group course-type-filter">
+          <h3>نوع التدريس</h3>
+          <select id="course-type-select">
+              <option value="">كل الأنواع</option>
+              <option value="تدريس من البداية">تدريس من البداية</option>
+              <option value="مراجعة">مراجعة</option>
+              <option value="حل امتحانات">حل امتحانات</option>
+          </select>
+      </div>
+      
+      <button class="reset-filters" id="reset-filters">إعادة تعيين</button>
+  </div>
+
+  <div class="courses-grid" id="courses-container">
+      <!-- سيتم ملؤها ديناميكيًا باستخدام JavaScript -->
+  </div>
+</div>
+
+
+
+  <!-- footer -->
+
+
+  <!-- upper footer -->
+
+
+  <p class="pFooter">
+    كما يسعدنا متابعتكم لنا من خلال مواقع التواصل الاجتماعي المختلفة عبر الأزرار الظاهرة اسفل الشاشة
+  </p>
+
+
+
+
+  <!-- lower footer -->
+
+  <footer class="footer1" id="footer1">
+    <div class="social-icons1" id="social1">
+      <a href="https://facebook.com" target="_blank" class="icon1" title="فيسبوك">
+        <i class="fab fa-facebook-f" style="color: blue;"></i>
+      </a>
+      <a href="https://wa.me/0000000000" target="_blank" class="icon1" title="واتساب">
+        <i class="fab fa-whatsapp" style="color: green;"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="icon1" title="إنستجرام">
+        <i class="fab fa-instagram"
+          style="background:linear-gradient(to top, blue , red , yellow); border-radius: 50%;"></i>
+      </a>
+      <a href="https://t.me/yourchannel" target="_blank" class="icon1" title="تيليجرام">
+        <i class="fab fa-telegram" style="color: rgb(25, 184, 252);background-color: white; border-radius: 50%;"></i>
+      </a>
+
+      <!--
+  <a href="https://youtube.com" target="_blank" class="icon1" title="يوتيوب">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a href="https://twitter.com" target="_blank" class="icon1" title="تويتر / X">
+      <i class="fab fa-x-twitter"></i>
+    </a>
+-->
+
+    </div>
+    <div class="copy-text1" id="copy1">
+      &copy; 2025 جميع الحقوق محفوظة - تصميم أبوبكر
+    </div>
+  </footer>
+
+
+  <!-- مكتبة Fuse.js للبحث المرن -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="header.js"></script>
+  <script src="small3.js">
+
+  </script>
+</body>
+
+</html>
